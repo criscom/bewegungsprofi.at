@@ -7,43 +7,55 @@
 */
 
 .front {
-    .panel-2col {
-        @include breakpoint($range769-1044) {
-            margin-top: 24px;
-            margin-top: 1.5rem;
-        }
+    .panel-2col-stacked {
+
     }
     .pane-title {
         text-align: center;
         margin-bottom: 24px !important;
         margin-bottom: 1.5rem !important;
     }
-    .center-wrapper.one {
+    .center-wrapper {
         .panel-panel {
             @include clearfix;
             @extend %white-space;
         }
         .panel-col-first {
-            .panel-pane {
                 float: left;
                 width: 49%;
+                margin-right: 1%;
                 @include breakpoint($iphone5-6)
                 {
                     float: none;
                     width: 100%;
                 }
-            }
-            .pane-block {
-                margin-left: 2%;
-                background-color: $header-color;
-                @include border-radius(4px);
+                >.pane-node >.node {
+                    border-bottom: 1px solid $main-nav;
+                    .field-name-field-image {
+                        text-align: center;
+                        img {
+                            @include border-radius(4px);
+                        }
+                    }
+                }
+        }
+        .panel-col-last {
+                width: 49%;
+                margin-left: 1%;
                 @include breakpoint($iphone5-6)
-                    {
+                {
                     float: none;
                     width: 100%;
-                    margin-left: 0 !important;
+                }
+            >.pane-node >.node {
+                    border-bottom: 1px solid $main-nav;
+                    .field-name-field-image {
+                        text-align: center;
+                        img {
+                            @include border-radius(4px);
+                        }
                     }
-            }
+                }
         }
     }
 }
@@ -82,41 +94,3 @@
 }
 
 
-.front {
-    .field-name-field-image {
-        img {
-            @include border-radius(4px);
-            }
-    }
-    .center-wrapper.two {
-        @include clearfix;
-        .panel-col-first {
-            width: 49%;
-            @include breakpoint($iphone5-6)
-            {
-                width: 100%;
-            }
-        }
-        .panel-col-last {
-            width: 49%;
-            margin-left: 2%;
-            @include breakpoint($iphone5-6)
-            {
-                width: 100%;
-                margin-left: 0;
-            }
-        }
-        .node {
-            margin-bottom: 0;
-            border: 0;
-            .field-name-body {
-                a.more-link {
-                    display: block;
-                    text-align: left;
-                    margin-top: 16px;
-                    margin-top: 1rem;
-                }
-            }
-        }
-    }
-}

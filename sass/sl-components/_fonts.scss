@@ -33,7 +33,7 @@ div.download-file a
 
 .inline-link
 {
-    @include link-colors($normal: $black, $hover: $brand-primary, $visited: lighten($black, 10%));
+    @include link-colors($normal: $red, $hover: lighten($red, 10%), $visited: lighten($red, 10%));
     text-decoration: underline;
     @extend %base-font-weight;
 }
@@ -42,7 +42,8 @@ div p a,
 .wohnungsdetails-link a,
 li a,
 .link a,
-.field-slideshow-caption-text a
+.field-slideshow-caption-text a,
+.field-content a
 {
     @extend .inline-link;
     &:hover {
@@ -50,9 +51,21 @@ li a,
     }
 }
 
+h2 a {
+    color: $black;
+    text-decoration: none;
+    &:hover {
+        color: lighten($black, 10%);
+    }
+}
+
+h1, h2 {
+    font-family: $roboto;
+}
+
 // header font weight
 
-h1 {
+h1, h2 {
     @extend %base-font-weight;
 }
 
