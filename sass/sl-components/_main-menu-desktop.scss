@@ -33,10 +33,10 @@ ul.nice-menu li
     // background-color: white;
     padding-top: 8px;
     padding-bottom: 12px;
-        @include breakpoint($range962-1150) {
+        @include breakpoint($range976-1190) {
         padding-bottom: 19px;
     }
-    @include breakpoint($range916-961) {
+    @include breakpoint($range916-975) {
         padding-bottom: 19px;
     }
     @include breakpoint($range769-915) {
@@ -56,10 +56,10 @@ ul.nice-menu li
         }
     }
     @include breakpoint($range769-915) {
-        padding-right: 4px;
-        padding-right: .25rem;
-        padding-left: 4px;
-        padding-left: .25rem;
+        padding-right: 2px;
+        padding-right: .125rem;
+        padding-left: 2px;
+        padding-left: .125rem;
     }
 
     a
@@ -71,11 +71,11 @@ ul.nice-menu li
         @include link-colors($normal: $black, $hover: $red !important);
         @extend %base-font-weight;
         // padding-right: 0 !important;
-        @include breakpoint($range962-1150) {
+        @include breakpoint($range976-1190) {
             font-size: 14px;
             font-size: 0.875rem;
         }
-        @include breakpoint($range916-961) {
+        @include breakpoint($range916-975) {
             font-size: 14px;
             font-size: 0.875rem;
         }

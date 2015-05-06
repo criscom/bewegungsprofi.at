@@ -1,12 +1,13 @@
 /* CSS code for Einfache Seite 1 (1 spaltig, Title, Text, Bild, Upload)
-** PANEL page
+** and for "Camps und Termine"
 ** added by criscom
 ** ds-2-col-stacked
 ** 
 */
 
 // PAGE LAYOUT
-.node-page
+.node-page,
+.node-camps-und-termine
 {
     &.view-mode-full
     {
