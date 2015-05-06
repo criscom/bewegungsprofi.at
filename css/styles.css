@@ -3722,17 +3722,23 @@ ul.nice-menu li {
   padding-top: 8px;
   padding-bottom: 12px;
 }
-@media (min-width: 769px) and (max-width: 961px) {
+@media (min-width: 962px) and (max-width: 1150px) {
   /* line 29, ../sass/sl-components/_main-menu-desktop.scss */
   ul.nice-menu li {
-    padding-bottom: 14px;
+    padding-bottom: 19px;
   }
 }
-@media (min-width: 769px) and (max-width: 876px) {
+@media (min-width: 916px) and (max-width: 961px) {
   /* line 29, ../sass/sl-components/_main-menu-desktop.scss */
   ul.nice-menu li {
-    padding-top: 12px;
-    padding-right: 0.75rem;
+    padding-bottom: 19px;
+  }
+}
+@media (min-width: 769px) and (max-width: 915px) {
+  /* line 29, ../sass/sl-components/_main-menu-desktop.scss */
+  ul.nice-menu li {
+    padding-top: 16px;
+    padding-top: 1rem;
   }
 }
 @media (min-width: 769px) {
@@ -3744,7 +3750,7 @@ ul.nice-menu li {
     padding-left: .5rem;
   }
 }
-@media (min-width: 769px) and (max-width: 876px) {
+@media (min-width: 769px) and (max-width: 915px) {
   /* line 29, ../sass/sl-components/_main-menu-desktop.scss */
   ul.nice-menu li {
     padding-right: 4px;
@@ -3753,7 +3759,7 @@ ul.nice-menu li {
     padding-left: .25rem;
   }
 }
-/* line 62, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 65, ../sass/sl-components/_main-menu-desktop.scss */
 ul.nice-menu li a {
   text-decoration: none;
   font-family: "Open sans", Arial, Helvetica, sans-serif;
@@ -3771,50 +3777,57 @@ ul.nice-menu li a:visited {
 ul.nice-menu li a:active {
   color: #231f20;
 }
-@media (min-width: 769px) and (max-width: 961px) {
-  /* line 62, ../sass/sl-components/_main-menu-desktop.scss */
-  ul.nice-menu li a {
-    font-size: 16px;
-    font-size: 1rem;
-  }
-}
-@media (min-width: 769px) and (max-width: 876px) {
-  /* line 62, ../sass/sl-components/_main-menu-desktop.scss */
+@media (min-width: 962px) and (max-width: 1150px) {
+  /* line 65, ../sass/sl-components/_main-menu-desktop.scss */
   ul.nice-menu li a {
     font-size: 14px;
     font-size: 0.875rem;
   }
 }
-/* line 80, ../sass/sl-components/_main-menu-desktop.scss */
+@media (min-width: 916px) and (max-width: 961px) {
+  /* line 65, ../sass/sl-components/_main-menu-desktop.scss */
+  ul.nice-menu li a {
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 915px) {
+  /* line 65, ../sass/sl-components/_main-menu-desktop.scss */
+  ul.nice-menu li a {
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
+}
+/* line 87, ../sass/sl-components/_main-menu-desktop.scss */
 ul.nice-menu li.active-trail {
   background-color: white !important;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
-/* line 84, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 91, ../sass/sl-components/_main-menu-desktop.scss */
 ul.nice-menu li.active-trail a {
   color: red;
 }
-/* line 87, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 94, ../sass/sl-components/_main-menu-desktop.scss */
 ul.nice-menu li.active-trail a:hover {
   color: black !important;
 }
 
-/* line 96, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 103, ../sass/sl-components/_main-menu-desktop.scss */
 ul.nice-menu-down li.menuparent,
 ul.nice-menu-down li.menuparent:hover {
   background-color: transparent;
   background-image: none;
 }
 
-/* line 106, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 113, ../sass/sl-components/_main-menu-desktop.scss */
 ul.nice-menu ul {
   top: 50px;
   top: 3.125rem;
   border-top: 0;
   background-color: white;
 }
-/* line 115, ../sass/sl-components/_main-menu-desktop.scss */
+/* line 122, ../sass/sl-components/_main-menu-desktop.scss */
 ul.nice-menu ul li a {
   text-decoration: none;
   color: black;
@@ -3838,24 +3851,29 @@ ul.nice-menu ul li a:active {
 ** max-width: 767px
 ** 
 */
-@media (max-width: 768px) {
+@media (max-width: 860px) {
   /* line 11, ../sass/sl-components/_main-menu-mobile.scss */
   .main-navigation {
     width: 100%;
   }
 
-  /* line 16, ../sass/sl-components/_main-menu-mobile.scss */
+  /* line 15, ../sass/sl-components/_main-menu-mobile.scss */
+  .responsive-menus.responsified {
+    margin-top: 6px;
+    margin-top: .375rem;
+  }
+  /* line 18, ../sass/sl-components/_main-menu-mobile.scss */
   .responsive-menus.responsified span.toggler, .responsive-menus.responsified .responsive-menus-simple {
     background: #231f20;
     box-shadow: 2px 2px 2px #080707;
-    color: #333;
+    color: white;
   }
-  /* line 20, ../sass/sl-components/_main-menu-mobile.scss */
+  /* line 22, ../sass/sl-components/_main-menu-mobile.scss */
   .responsive-menus.responsified span.toggler li a, .responsive-menus.responsified .responsive-menus-simple li a {
-    color: #333;
+    color: white;
   }
 
-  /* line 25, ../sass/sl-components/_main-menu-mobile.scss */
+  /* line 27, ../sass/sl-components/_main-menu-mobile.scss */
   .block-nice-menus {
     display: none;
   }
